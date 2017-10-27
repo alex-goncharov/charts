@@ -4,7 +4,7 @@
 replicaCount: 1
 image:
   repository: quay.io/coreos/etcd-operator
-  tag: v0.3.3
+  tag: v0.6.0
   pullPolicy: IfNotPresent
 resources:
   limits:
@@ -69,3 +69,5 @@ cluster:
 rbac:
   install: false
   apiVersion: v1beta1
+  tls: false
+  s3Backup: false
